@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SmartPayroll by Kelvin - Soluciones de nómina y finanzas para PYMEs">
+    <meta name="author" content="SmartPayroll by Kelvin">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>SmartPayroll by Kelvin - Sobre Nosotros</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body>
+
+    <header class="">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><h2>SmartPayroll by Kelvin</h2></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Sobre Nosotros</h1>
+                    <span>Tu solución en nómina y finanzas para PYMEs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="more-info about-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <div class="right-content">
+                        <h2>¿Quiénes somos?</h2>
+                        <p>SmartPayroll by Kelvin es la solución definitiva para la gestión de nómina y finanzas de pequeñas y medianas empresas. Nuestro software está diseñado para simplificar procesos, reducir errores y garantizar el cumplimiento normativo con total eficiencia.</p>
+                        <a href="services.html" class="filled-button">Descubre más</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="left-image">
+                        <img src="assets/images/about-image.jpg" alt="SmartPayroll by Kelvin">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Nuestra <em>Misión</em></h2>
+                        <p>Facilitar la administración de nómina y finanzas para pequeñas y medianas empresas, ofreciendo soluciones tecnológicas innovadoras, seguras y eficientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Nuestra <em>Visión</em></h2>
+                        <p>Convertirnos en el software líder en gestión de nómina y finanzas en América Latina, optimizando los procesos administrativos y financieros de las empresas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Nuestros <em>Valores</em></h2>
+                        <ul>
+                            <li>✔ Innovación</li>
+                            <li>✔ Seguridad</li>
+                            <li>✔ Transparencia</li>
+                            <li>✔ Eficiencia</li>
+                            <li>✔ Compromiso con el cliente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-item">
+                    <h4>SmartPayroll by Kelvin</h4>
+                    <p>La mejor solución para la gestión de nómina y finanzas de tu empresa.</p>
+                </div>
+                <div class="col-md-3 footer-item">
+                    <h4>Enlaces útiles</h4>
+                    <ul class="menu-list">
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="services.html">Servicios</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-item">
+                    <h4>Contáctanos</h4>
+                    <p>Email: contacto@smartpayroll.com</p>
+                    <p>Teléfono: +1 809-555-5555</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
