@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Nómina</title>
+</head>
+<body>
+  <h1>Calculadora de Nómina</h1>
+  <label for="salario_bruto">Salario Bruto:</label>
+  <input type="number" id="salario_bruto" required><br><br>
+
+  <label for="porcentaje_impuesto">Porcentaje de Impuesto (%):</label>
+  <input type="number" id="porcentaje_impuesto" required><br><br>
+
+  <button onclick="calcularSalarioNeto()">Calcular Salario Neto</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function calcularSalarioNeto() {
+      let salarioBruto = document.getElementById('salario_bruto').value;
+      let porcentajeImpuesto = document.getElementById('porcentaje_impuesto').value;
+      let impuesto = salarioBruto * (porcentajeImpuesto / 100);
+      let salarioNeto = salarioBruto - impuesto;
+
+      document.getElementById('resultado').innerText = "El salario neto es: " + salarioNeto;
+    }
+  </script>
+</body>
+</html>
