@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora de Nómina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Nómina Avanzada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function calcularSalarioNeto() {
+            let salarioBruto = parseFloat(document.getElementById('salario_bruto').value) || 0;
+            let porcentajeImpuesto = parseFloat(document.getElementById('porcentaje_impuesto').value) || 0;
+            let deducciones = parseFloat(document.getElementById('deducciones').value) || 0;
+            let bonificaciones = parseFloat(document.getElementById('bonificaciones').value) || 0;
+            
+            let impuesto = salarioBruto * (porcentajeImpuesto / 100);
+            let salarioNeto = salarioBruto - impuesto - deducciones + bonificaciones;
+            
+            document.getElementById('resultado').innerHTML = `
+                <p class='text-lg font-semibold text-green-700'>El salario neto es: <span class='font-bold'>${salarioNeto.toFixed(2)} USD</span></p>
+            `;
+        }
+    </script>
 </head>
-<body>
-  <h1>Calculadora de Nómina</h1>
-  <label for="salario_bruto">Salario Bruto:</label>
-  <input type="number" id="salario_bruto" required><br><br>
-
-  <label for="porcentaje_impuesto">Porcentaje de Impuesto (%):</label>
-  <input type="number" id="porcentaje_impuesto" required><br><br>
-
-  <button onclick="calcularSalarioNeto()">Calcular Salario Neto</button>
-
-  <p id="resultado"></p>
-
-  <script>
-    function calcularSalarioNeto() {
-      let salarioBruto = document.getElementById('salario_bruto').value;
-      let porcentajeImpuesto = document.getElementById('porcentaje_impuesto').value;
-      let impuesto = salarioBruto * (porcentajeImpuesto / 100);
-      let salarioNeto = salarioBruto - impuesto;
-
-      document.getElementById('resultado').innerText = "El salario neto es: " + salarioNeto;
-    }
-  </script>
+<body class="bg-green-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-2xl font-bold text-green-800 text-center mb-4">Calculadora de Nómina</h1>
+        
+        <label class="block text-sm font-medium text-gray-700">Salario Bruto:</label>
+        <input type="number" id="salario_bruto" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400" required>
+        
+        <label class="block text-sm font-medium text-gray-700 mt-2">Porcentaje de Impuesto (%):</label>
+        <input type="number" id="porcentaje_impuesto" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400" required>
+        
+        <label class="block text-sm font-medium text-gray-700 mt-2">Deducciones:</label>
+        <input type="number" id="deducciones" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+        
+        <label class="block text-sm font-medium text-gray-700 mt-2">Bonificaciones:</label>
+        <input type="number" id="bonificaciones" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400">
+        
+        <button onclick="calcularSalarioNeto()" class="w-full bg-green-600 text-white py-2 mt-4 rounded-lg hover:bg-green-700 transition">Calcular</button>
+        
+        <div id="resultado" class="mt-4 text-center"></div>
+    </div>
 </body>
 </html>
